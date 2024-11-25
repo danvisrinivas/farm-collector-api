@@ -25,9 +25,14 @@ The `farm-collector-api` is a RESTful service built using Spring Boot. It allows
    ```bash
    git clone https://github.com/danvisrinivas/farm-collector-api.git
    cd farm-collector-api
-2. **Run the application**:
-   Run the below command for Running the application
+2. **Build the application**:
+   Before building the application, change the **database** **username** and **password** with your **Mysql credentials** and proceed accordingly.
+   Run the below command to build the application
+   `mvn clean install` (This will run all the test cases written for controller and service layer)
+4. **Run the application**:
+   Run the below command to run the application
    `mvn spring-boot:run`
 
 ### API Documentation with Swagger
-    Access the Swagger URL at `http://localhost:8080/swagger-ui.html` to work woth endpoints.
+    Access the Swagger URL at `http://localhost:8080/swagger-ui.html` to work with endpoints.
+    You can test the report endpoints directly by entering "Winter" or "Summer" Season because already with Flyway DB scripts, inserted records into database with Scripts.
